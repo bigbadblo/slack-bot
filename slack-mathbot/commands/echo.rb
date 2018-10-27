@@ -8,7 +8,7 @@
        client.say(channel: data.channel, text: "#{match[:operator]}: #{match[:expression]}")
        client.say(channel: data.channel, text: "#{match.inspect}")
       rescue StandardError => e
-        client.say(channel: data.channel, text: "Sorry, #{e.message}.", gif: 'idiot')
+        client.say(channel: data.channel, text: "Sorry, #{e.message}.")
       end
     end
   end
