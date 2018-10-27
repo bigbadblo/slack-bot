@@ -10,9 +10,9 @@ module SlackMathbot
       
       def self.call(client, data, match)
          message = `node /app/index.js #{ match['expression']}`
-          client.say(channel: data.channel, text: message, gif: 'nothing')
+          client.say(channel: data.channel, text: message)
       rescue StandardError => e
-        client.say(channel: data.channel, text: "Sorry, #{e.message}.", gif: 'idiot')
+        client.say(channel: data.channel, text: "Sorry, #{e.message}.")
       end
     end
   end
