@@ -1,6 +1,6 @@
  module SlackMathbot
   module Commands
-    class Calculate < SlackRubyBot::Commands::Base
+    class Echo < SlackRubyBot::Commands::Base
       operator 'echo'
       command 'echo'
       
